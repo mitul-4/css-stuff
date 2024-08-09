@@ -14,8 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Playwrite+BE+VLG:wght@100..400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class = "container">
-        <nav class="navbar navbar-expand-sm bg-light justify-content-center fixed-top" id="div1">
+        <nav class="navbar navbar-expand-sm bg-light justify-content-center fixed-top" id="nav1">
             <div class="container-fluid py-lg-4 py-2">
                 <ul class="navbar-nav">
                     <li class="nav-item">
@@ -40,16 +39,51 @@
                         <a class="nav-link" href="#">Achievements</a>
                     </li>
                 </ul>
+                <div class = "form-group">
+                  <input type="text" placeholder="Search.." class ="form-control" id = "search-bar">
+                </div>
+  
             </div>
         </nav>
-        <div class = "row" id="div2">
+        <div class = "container-fluid">
+        <div id = "slideshow1" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#slideshow1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#slideshow1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#slideshow1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://images.nationalgeographic.org/image/upload/v1638892272/EducationHub/photos/hoh-river-valley.jpg" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+              <img src="https://rafflesrampage.wordpress.com/wp-content/uploads/2015/09/bishan-campus.jpg" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+              <img src="https://rafflesrampage.wordpress.com/wp-content/uploads/2015/09/m4-1-gfx02e.jpg" class="d-block w-100">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#slideshow1" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#slideshow1" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+          </div>
+        </div>
+
+        <div class = "container p-2">
+      <!-- <div class = "row g-2" id="div2">
             <p>
                 CSS is home to both experienced coders and beginners. Those who are beginners, fret not! There are beginner classes on coding taught by experienced coders. We have many competitions available. In hackathons like NUS Hack&Roll or iNTUition, you can ‘hack’ together a prototype app in 24 hours. CTFs like SMU Whitehacks, Cyberthon or the Cyber Defenders Discovery Camp let you race other teams to hack (the real one) into mock environments. Finally, some members compete in the prestigious National Olympiad in Informatics (NOI). In CSS, we try to make CCa sessions fun through certain activities such as Kahoot!, mini competitons and many more! What do we learn in CSS? There are different courses available such as web development, where you can learn how to create your own website, Artificial Intelligence and Machine Learning, which are essential skills required in the technological industry right now. In all of our courses, you will have opportunities to collaborate with and learn from other members. We also have semi-regular bonding sessions, where we play games that are sometimes computer-themed and many times not. You can also look forward to our club camp and possible learning journeys outside regular CCA hours!
             </p>
         </div>
-        <div class="row align-items-center">
-            <div class="col-md-3 col-sm-3 border text-center mt-0 p-5 rounded list-unstyled">
-                <input type="text" placeholder="Search.." id = "search-bar">
+        -->
+        <div class="row align-items-center g-2">
+            <div class="col border text-center mt-4 p-5 list-unstyled">
                 <h3 class="mt-4">Recent Posts</h3>
                 <li class="nav-item">
                     <a class="nav-link" href="#">team raffles games</a>
@@ -89,30 +123,27 @@
                   <li class="nav-item">
                     <a class="nav-link" href="#">2020</a>
                   </li>
-
         
             </div>
-            <div class="col-md-8 col-sm-3 text-center mt-1 p-2">
-                <h1 class="mt-4">Join Us Today!</h3>
-                    <h5 class="mt-4">Posted on 24 July 2024</h3>
-
-
-              <img src = "https://infocommsociety.com/wp-content/uploads/2024/02/Instagram.pptx.png">
+            <div class = "col-md-1"></div>
+            <div class="col border text-center mt-4 p-5 list-unstyled" style ="font-family:JetBrains Mono;">
+              <h2>CCA Timings</h2>
             </div>
+            <div style = "height:20px"></div>
             <div class = "row">
                 <div class = "col-md-4 col-md-offset-1 text-center p-2 border ">Project 1</div>
                 <div class = "col-md-4 col-md-offset-1 text-center p-2 border">Project 2</div>
                 <div class = "col-md-4 col-md-offset-1 text-center p-2 border">Project 3</div>
             </div>
-        </div> 
-    </div>
+        </div>
+
 </body>
 <link rel="stylesheet" href="dnwbdu.css">
 </html>
 
 
 
- link for picture (Project 1):
+ <!-- link for picture (Project 1):
 https://www.google.com/url?sa=i&url=https%3A%2F%2Fgithub.com%2Ftopics%2Fcss-language&psig=AOvVaw2LTQ4CvYVQhmhCFyqtQwUu&ust=1721872380575000&source=images&cd=vfe&opi=89978449&ved=0CA8QjRxqFwoTCKCp4dDIvocDFQAAAAAdAAAAABAE
 Description: CSS stands for "Cascading Style Sheets" and it is used to style and layout web pages — for example, to alter the font, color, size, and spacing of your content, split it into multiple columns, or add animations and other decorative features.
 
@@ -125,4 +156,4 @@ Description: Differences between CSS, HTML and JS
 
 link for picture (Project 3)
 https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.coursereport.com%2Fblog%2Fwhat-is-css-a-guide-for-beginners&psig=AOvVaw1ItwFGwln1NPpTV9U4Us7N&ust=1721874785538000&source=images&cd=vfe&opi=89978449&ved=0CA8QjRxqFwoTCNi4-8nRvocDFQAAAAAdAAAAABAE
-Description: How to use CSS together with HTML and JS
+Description: How to use CSS together with HTML and JS -->
