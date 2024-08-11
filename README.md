@@ -1,5 +1,2 @@
 # css-stuff
-hgv
-hvg
-hvhvg
-hvg
+so i guess this is supposed to be a css website of sorts :)
